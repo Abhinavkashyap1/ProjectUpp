@@ -91,6 +91,28 @@ background: linear-gradient(135deg, #5317D3, #443D39);
     margin-top: 40px;
     margin-left: 40px;
 }
+.hero{
+  position: relative;
+  height: 550px;
+  width: 500px;
+  overflow: hidden;
+  float: right;
+  margin-right: 40px;
+}
+.hero img{
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  overflow: hidden;
+  animation: upDown 2s ease-in-out infinite;
+}
+@keyframes upDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); } /* Move image up */
+  100% { transform: translateY(0); }
+}
+
 
 
 /*  background-color: blueviolet;-----------------Page 2------------- */
